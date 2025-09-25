@@ -5,20 +5,20 @@
 class Tgs < Formula
   desc "Thought-Guided Software development workflow CLI"
   homepage "https://github.com/akelv/tgsflow"
-  version "0.0.2"
+  version "0.0.3"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/akelv/tgsflow/releases/download/v0.0.2/tgs_0.0.2_darwin_amd64.tar.gz"
-      sha256 "42137f4696cd7c893f5369af21b6afdeaecf39f97d04217496d6811d72f33d9c"
+      url "https://github.com/akelv/tgsflow/releases/download/v0.0.3/tgs_0.0.3_darwin_amd64.tar.gz"
+      sha256 "c11d79e3ff17e0dc857c84d4c8d0c2f105d8b26f268e70f7ca479504b3fab913"
 
       def install
         bin.install "tgs"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/akelv/tgsflow/releases/download/v0.0.2/tgs_0.0.2_darwin_arm64.tar.gz"
-      sha256 "d838ed8777d85c3b508ab59e08e6310bc752ed1efd7b1f6eaa9ce9dc91209915"
+      url "https://github.com/akelv/tgsflow/releases/download/v0.0.3/tgs_0.0.3_darwin_arm64.tar.gz"
+      sha256 "a1a9121f397bf123e56a6803808c01f01d1a9bf5003d42fefb699dda0ff2d7fd"
 
       def install
         bin.install "tgs"
@@ -28,15 +28,15 @@ class Tgs < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/akelv/tgsflow/releases/download/v0.0.2/tgs_0.0.2_linux_amd64.tar.gz"
-      sha256 "06b3026f91529352b38d8718525246a6861bb3ef92ea700e8297ef4f3859c393"
+      url "https://github.com/akelv/tgsflow/releases/download/v0.0.3/tgs_0.0.3_linux_amd64.tar.gz"
+      sha256 "ecedd7b0a0a03ccc4bada302833e58af306f55f8a5d8cd27dff199d62c9c315e"
       def install
         bin.install "tgs"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/akelv/tgsflow/releases/download/v0.0.2/tgs_0.0.2_linux_arm64.tar.gz"
-      sha256 "f7586cb91af96893d8a2be249a0cf40a019d731d841b511388f6260ee8d79fc1"
+      url "https://github.com/akelv/tgsflow/releases/download/v0.0.3/tgs_0.0.3_linux_arm64.tar.gz"
+      sha256 "1727746f0bcd37a8cd05ea14c1523791930a76f6568924c2cdc0332e6a8ec7b9"
       def install
         bin.install "tgs"
       end
